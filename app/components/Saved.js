@@ -48,7 +48,7 @@ var Main = React.createClass({
     );
   },
 
-  // A helper method for mapping through our articles and outputting some HTML
+  // A helper method for mapping through our repos and outputting some HTML
   renderResults: function() {
     return this.state.savedResults.map(function(docs, data) {
 

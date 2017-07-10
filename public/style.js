@@ -33,6 +33,34 @@ export default StyleSheet.create({
     'textDecoration': 'none',
     'cursor': 'pointer'
   },
+  // -----------
+Community / Panels / 
+-------------
+  'card': {
+    'height': [{ 'unit': 'px', 'value': 150 }]
+  },
+  'resources': {
+    'borderColor': 'orange'
+  },
+  'panel-default>title': {
+    'textAlign': 'center',
+    'color': '#F0595C',
+    'borderColor': 'orange'
+  },
+  'levitate': {
+    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#ffd966' }],
+    'boxShadow': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'px', 'value': 5 }, { 'unit': 'px', 'value': 25 }, { 'unit': 'string', 'value': '#ffd966' }]
+  },
+  'mapitymap': {
+    'height': [{ 'unit': 'px', 'value': 235 }]
+  },
+  'comments': {
+    'backgroundColor': 'orange',
+    'opacity': '.9',
+    'clear': 'both',
+    'overflow': 'auto',
+    'paddingTop': [{ 'unit': 'px', 'value': 20 }]
+  },
   'form-control': {
     'display': 'block',
     'width': [{ 'unit': '%H', 'value': 1 }],
@@ -43,7 +71,7 @@ export default StyleSheet.create({
     'color': '#F0595C',
     'backgroundColor': '#ffffff',
     'backgroundImage': 'none',
-    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'gold' }],
+    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid:' }, { 'unit': 'string', 'value': '#ffd966' }],
     'borderRadius': '4px',
     'WebkitBoxShadow': 'inset 0 1px 1px orange',
     'boxShadow': [{ 'unit': 'string', 'value': 'inset' }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'orange' }],
@@ -213,106 +241,14 @@ export default StyleSheet.create({
     'animationIterationCount': '1',
     'animationFillMode': 'forwards'
   },
-  // ------------------------------
-
-New Drop Down 
-
--------------------------------------
-  // @import "compass/css3";
-
-$base : white;
-$flat: #F0595C;
-$dark: white;
-
-body{
-	background-color: $dark;
-	font-family: sans-serif;
-}
-
-@mixin size{
-	padding: 13px 30px;
-	width: 200px;
-	vertical-align: middle;
-}
-
-@mixin position{
-	margin-left: -30px;
-}
-
-a{
-	text-decoration: none; 
-	color: inherit;
-}
-
-ul li{
-	list-style: none;
-}
-
-.dropdown{
-	@include size;
-	margin: 0 auto;
-	background-color: $flat;
-	text-align: center;
-}
-
-.dropdown #top{
-	color: $base;
-	position: relative;
-}
-
-.dropdown li ul li:hover{
-	color: $base;
-	background-color: darken($flat, 5%);
-	@include size;
-	@include position;
-}
-
-.dropdown li ul li{
-	@include size;
-	@include position;
-	color: $flat;
-	border-bottom: 1px solid darken($base, 5%);
-}
-
-.dropdown li ul li:first-child{
-margin-top: -13px;
-}
-
-.dropdown li .dropdown-box{
-	height: 0;
-	overflow: hidden;
-    display: none;
-    background-color: $base;
-    width: 100%;
-    @include position;
-    margin-bottom: -15px;
-    margin-top: 13px;
-    border-top: 20px solid $dark;
-    padding: 0;
-    @include size;
-}
-
-.dropdown li:hover .dropdown-box, .dropdown li:active .dropdown-box {
-	display:block;
-	background-color: $base;
-	animation: box 2s ease;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-}
-
-@keyframes box {
-  from {height: 0;}
-  to {height: 203px;}
-}
-
-.dropdown li:hover span{
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid $base;
-	margin-top: 42px;
-	position: absolute;
-	margin-left: -40px;
-	}
+  'dropdown li:hover span': {
+    'width': [{ 'unit': 'px', 'value': 0 }],
+    'height': [{ 'unit': 'px', 'value': 0 }],
+    'borderLeft': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'transparent' }],
+    'borderRight': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'transparent' }],
+    'borderBottom': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '$base' }],
+    'marginTop': [{ 'unit': 'px', 'value': 42 }],
+    'position': 'absolute',
+    'marginLeft': [{ 'unit': 'px', 'value': -40 }]
+  }
 });

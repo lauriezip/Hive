@@ -39,7 +39,7 @@ var Main = React.createClass({
                   <li><Link to="/saved"><i className="fa fa-bookmark-o" aria-hidden="true"></i></Link></li>
                  <li><Link to=""><i className="fa fa-user-o" aria-hidden="true"></i></Link></li>
                  <li><Link to=""><i className="fa fa-envelope-o" aria-hidden="true"></i></Link></li>
-                 <li><Link to=""><i className="fa fa-users" aria-hidden="true"></i></Link></li>
+                 <li><Link to="/community"><i className="fa fa-users" aria-hidden="true"></i></Link></li>
                 </ul>
               </div>
             </div>
