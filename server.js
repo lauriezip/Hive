@@ -99,13 +99,13 @@ app.post("/api/forum", function(req, res) {
       console.log(err);
     }
     else {
-      console.log("success");
+      console.log("save success", doc);
       res.send(doc);
     }
   });
 });
 
-app.get("/api/saved", function(req, res) {
+app.get("/api/posts", function(req, res) {
 
   Forum.find({})
     .exec(function(err, doc) {
@@ -114,6 +114,7 @@ app.get("/api/saved", function(req, res) {
         console.log(err);
       }
       else {
+        console.log("retrieve success",doc);
         res.send(doc);
       }
     });
@@ -123,7 +124,6 @@ app.get("/api/saved", function(req, res) {
 app.get("*", function(req, res) {
   res.sendFile(__dirname + "/public/index.html");
 });
-
 
 // -------------------------------------------------
 

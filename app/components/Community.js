@@ -12,7 +12,7 @@ var Community = React.createClass({
     return (
       <div>
         <Dashboard />
-         <Maps />
+        <Maps/>
         <Feed />
         <Comments />
        

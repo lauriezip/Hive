@@ -1,0 +1,232 @@
+html{
+    background: #f4f4f4;
+}
+body{
+    background: #f4f4f4;
+    color: #2a2a2a;
+    font-family:  Helvetica,Arial, sans-serif
+}
+
+
+h1,h2,h3{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+    margin-top: 5px;
+}
+
+a{
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #f29e33;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.center{
+    text-align: center;
+}
+
+/*-----------------------------------------
+        Nav Styles
+------------------------------------------*/
+.navbar{
+    background: #131313; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3d3d3d, #131313); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3d3d3d, #131313); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3d3d3d, #131313); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3d3d3d, #131313); /* Standard syntax */
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+
+.fa:hover, .fa:focus{
+    color: white;
+}
+
+/*------------------------------------
+   Info Box Styles
+-------------------------------------*/
+
+.well{
+    border-radius: 0;
+}
+
+.gray-card{
+    background: #e5e5e5;
+    -moz-box-shadow:    1px 1px 5px #777;
+    -webkit-box-shadow:  1px 1px 5px#777;
+    box-shadow:         1px 1px 5px #777;
+}
+
+
+.gray-card>h3:after {
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+     bottom: -10px;
+     content: "";
+     display: block;
+     position: relative;
+     width: 100px;
+     margin: 0 auto;
+ }
+
+ .results>h3:after {
+     border: 0;
+     height: 1px;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+     bottom: -10px;
+     content: "";
+     display: block;
+     position: relative;
+     width: 100px;
+     margin: 0 auto;
+ }
+
+.orange-card{
+    background: #f29e33; /* For browsers that do not support gradients */
+    background: url('comb2.png') no-repeat 114% 36%, -webkit-radial-gradient(#f5d048 5%,  #f29e33 60%); /* Safari 5.1-6.0 */
+    background: url('comb2.png') no-repeat 114% 36%,-o-radial-gradient(#f5d048 5%, #f29e33 60%); /* For Opera 11.6-12.0 */
+    background: url('comb2.png') no-repeat 114% 36%,-moz-radial-gradient(#f5d048 5%, #f29e33 60%); /* For Firefox 3.6-15 */
+    background: url('comb2.png') no-repeat 114% 36%,radial-gradient(#f5d048 5%,  #f29e33 60%); /* Standard syntax */
+    border: 10px solid white;
+    border-radius: 0;
+    -moz-box-shadow:    1px 1px 5px #777;
+    -webkit-box-shadow:  1px 1px 5px#777;
+    box-shadow:         1px 1px 5px #777;
+}
+
+
+
+/*------------------------------------
+   Logo and Homepage Style
+-------------------------------------*/
+.logo-header{
+    position: absolute;
+    top: -95px;
+}
+
+/*------------------------------------
+   Profile Page
+-------------------------------------*/
+
+.main{
+    text-align: center;
+}
+
+
+.main>h1{
+    margin: 10px;
+}
+.main>h3{
+    margin: 5px;
+}
+
+.profile>li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 20px;
+    
+}
+
+.social-media{
+    color: #2a2a2a;
+}
+
+.about{
+    height: 220px;
+}
+
+/*------------------------------------
+   Search Page
+-------------------------------------*/
+.results{
+    height: 200px;
+    overflow: hidden;
+}
+
+.results h3{
+    padding-top: 15px; 
+}
+
+.right{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+
+
+/*-----------------------------------------
+        Forms + Login
+------------------------------------------*/
+
+.form-control{
+    -moz-box-shadow:   inset 1px 1px 5px #777;
+    -webkit-box-shadow: inset 1px 1px 5px#777;
+    box-shadow:       inset  1px 1px 5px #777;
+}
+
+.signin{
+    opacity: .7;
+}
+
+.signin>h3{
+ color: #e4740f;
+}
+
+/*-----------------------------------------
+       Homepage
+------------------------------------------*/
+
+.home-container{
+    background: url('hivebg.png') no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: 0 100%;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: -330px;
+    left: -200px;
+}
+
+/*-----------------------------------------
+       Community
+------------------------------------------*/
+.place{  
+  width: 40px;
+  padding: 20px;
+  border: 1px solid blue;
+  background: red;
+  color: yellow; 
+}
+
+.map{
+    height: 246px;
+}
+
+.table-card{
+    padding: 0;
+}
+
+.table-card>table{
+    margin-bottom: 10px;
+}

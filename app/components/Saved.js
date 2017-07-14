@@ -7,28 +7,28 @@ var helpers = require("../utils/helpers");
 // Create the Main component
 var Main = React.createClass({
 
-  getInitialState: function() {
+  getInitialState: function () {
     return { savedRepos: "" };
   },
 
   // When this component mounts, get all saved articles from our db
-  componentDidMount: function() {
-    helpers.getSaved().then(function(result) {
+  componentDidMount: function () {
+    helpers.getSaved().then(function (result) {
       this.setState({ savedRepos: result.data });
-      console.log("saved results",result.data);
+      console.log("saved results", result.data);
     }.bind(this));
   },
 
   // This code handles the deleting saved articles from our database
-  handleClick: function(repo) {
+  handleClick: function (repo) {
     console.log("CLICKED");
     console.log(repo);
 
     // Delete the list!
-    helpers.deleteSaved(repo.title, repo.body, repo.url).then(function() {
+    helpers.deleteSaved(repo.title, repo.body, repo.url).then(function () {
 
       // Get the revised list!
-      helpers.getSaved().then(function(Data) {
+      helpers.getSaved().then(function (Data) {
         this.setState({ savedRepos: Data.data });
         console.log("saved results", Data.data);
       }.bind(this));
@@ -36,69 +36,52 @@ var Main = React.createClass({
     }.bind(this));
   },
   // A helper method for rendering the HTML when we have no saved articles
-  renderEmpty: function() {
+  renderEmpty: function () {
     return (
-      <li className="list-group-item">
-        <h3>
-          <span>
-            <em>Saved Projects</em>
-          </span>
-        </h3>
-      </li>
+      <div className="col-md-12">
+        <div className="well gray-card">
+          <h3>Add some issues and let's start coding!</h3>
+        </div>
+      </div>
     );
   },
 
   // A helper method for mapping through our repos and outputting some HTML
-  renderRepos: function() {
-    return this.state.savedRepos.map(function(repo, index) {
+  renderRepos: function () {
+    return this.state.savedRepos.map(function (repo, index) {
 
       return (
         <div key={index}>
-          <li className="list-group-item">
-            <h3>
-              <span>
-                <em>{repo.title}</em>
-              </span>
+          <div className="col-md-12">
+            <div className="well gray-card">
               <span className="btn-group pull-right">
-                <a href={repo.url} rel="noopener noreferrer" target="_blank">
-                  <button className="btn btn-default ">View Repository</button>
-                </a>
-                <button className="btn btn-primary" onClick={() => this.handleClick(repo)}>Delete</button>
+                <button className="fa fa-trash-o" onClick={() => this.handleClick(repo)}></button>
               </span>
-            </h3>
-            <p>Date Published: {repo.date}</p>
-          </li>
+              <h3>
+                <a href={repo.html_url} target="_blank">{repo.title}</a>
+              </h3>
+              <div>
+                {repo.body}
+              </div>
+            </div>
+          </div>
         </div>
       );
     }.bind(this));
   },
 
   // A helper method for rendering a container and all of our artiles inside
-  renderContainer: function() {
+  renderContainer: function () {
     return (
       <div className="main-container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="panel panel-primary">
-              <div className="panel-heading">
-                <h1 className="panel-title">
-                  <strong>
-                    <i className="fa fa-download" aria-hidden="true"></i> Saved Repositories</strong>
-                </h1>
-              </div>
-              <div className="panel-body">
-                <ul className="list-group">
-                  {this.renderRepos()}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        {this.renderRepos()}
+
       </div>
     );
   },
   // Our render method. Utilizing a few helper methods to keep this logic clean
-  render: function() {
+  render: function () {
     // If we have no repos, we will return this.renderEmpty() which in turn returns some HTML
     if (!this.state.savedRepos) {
       return this.renderEmpty();

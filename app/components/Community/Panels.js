@@ -6,9 +6,9 @@ var Panel = React.createClass({
   render: function() {
     return (
       <div className="col-md-3">
-        <div className="panel panel-default resources">
-        <div className="panel-heading title ">{this.props.title}</div>
-          <div className="panel-body card">Basic panel example</div>
+        <div className="well orange-card">
+        <h3>{this.props.title}</h3>
+          <p>Basic panel example</p>
         </div>
       </div>
     );

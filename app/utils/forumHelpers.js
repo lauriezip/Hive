@@ -12,8 +12,8 @@ var forumHelpers = {
 
     },
     // This will return any saved repos from our database
-    getForums: function() {
-        return axios.get("/api/saved")
+    getPosts: function() {
+        return axios.get("/api/posts")
             .then(function(results) {
                 console.log("axios results", results);
                 return results;
@@ -21,7 +21,7 @@ var forumHelpers = {
     },
     // This will save new repos to our database
     postForum: function(title, body) {
-        var newForum = { title: 'title', body: 'body'};
+        var newForum = { title: title, body: body};
         console.log("newForum", newForum);
         return axios.post("/api/forum", newForum)
             .then(function(response) {

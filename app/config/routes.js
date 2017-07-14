@@ -23,12 +23,14 @@ var Search = require("../components/Search");
 var Saved = require("../components/Saved");
 var Community = require("../components/Community");
 var Forum = require("../components/Forum");
-var Profile = require("../components/Profile/Profile");
+var Home = require("../components/Home");
+var Profile = require("../components/Profile");
 
 // Export the Routes
 module.exports = (
   // High level component is the Router component.
   <Router history={browserHistory}>
+    <Route path="/home" component={Home} />
     <Route path="/" component={Main}>
 
       {/* If user selects Search or Saved show the appropriate component */}
@@ -37,9 +39,9 @@ module.exports = (
       <Route path="Community" component={Community} />
       <Route path="/Forum" component={Forum} />
       <Route path="/Profile" component={Profile} />
+      
       {/* If user selects any other path... we get the Home Route */}
       <IndexRoute component={Search} />
-
     </Route>
   </Router>
 );

@@ -2,13 +2,16 @@
 var React = require("react");
 var Link = require("react-router").Link;
 
-// Create the Main component
+
 var Maps = React.createClass({
 
-  render: function() {
+  render: function () {
     return (
-      <div className="col-md-6">
-        <div className="well  levitate mapitymap">
+      <div>
+        <div className="col-md-6">
+          <div className="well gray-card map">
+            <h3>Map Goes here</h3>
+          </div>
         </div>
       </div>
     );
@@ -18,7 +21,5 @@ var Maps = React.createClass({
 
 
 
-
-  
-  // Export the module back to the route
-  module.exports = Maps;
+// Export the module back to the route
+module.exports = Maps;

@@ -9,6 +9,8 @@
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
+    "google-map-react": "^0.24.0",
+    "google-maps-react": "^1.0.19",
     "jquery": "^3.2.1",
     "mongoose": "^4.4.20",
     "morgan": "^1.7.0",
