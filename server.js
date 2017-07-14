@@ -6,6 +6,7 @@ var mongoose = require("mongoose");
 
 // Require Schemas
 var Article = require("./server/model");
+var Forum = require("./server/forumModel");
 
 // Create Instance of Express
 var app = express();
@@ -23,7 +24,7 @@ app.use(express.static("./public"));
 // -------------------------------------------------
 
 // MongoDB Configuration configuration
-mongoose.connect("mongodb://admin:reactrocks@ds023593.mlab.com:23593/heroku_pg676kmk");
+mongoose.connect("mongodb://localhost/Hive");
 var db = mongoose.connection;
 
 db.on("error", function(err) {
@@ -81,6 +82,41 @@ app.delete("/api/saved/", function(req, res) {
       res.send("Deleted");
     }
   });
+});
+
+/*--------------------------------------
+    FORUM ROUTES
+------------------------------------------*/
+app.post("/api/forum", function(req, res) {
+  console.log("hit route");
+  var newForum = new Forum(req.body);
+
+  console.log("req", req.body);
+
+  newForum.save(function(err, doc) {
+    if (err) {
+      console.log("error");
+      console.log(err);
+    }
+    else {
+      console.log("success");
+      res.send(doc);
+    }
+  });
+});
+
+app.get("/api/saved", function(req, res) {
+
+  Forum.find({})
+    .exec(function(err, doc) {
+
+      if (err) {
+        console.log(err);
+      }
+      else {
+        res.send(doc);
+      }
+    });
 });
 
 // Any non API GET routes will be directed to our React App and handled by React Router

@@ -2,17 +2,17 @@ var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
-var RepoSchema = new Schema({
+var ForumSchema = new Schema({
   title: {
     type: String
   },
   body: {
     type: String
   },
-  url: {
-    type: String
+  comments: {
+    type: Array
   }
 });
 
-var Repo = mongoose.model("Repo", RepoSchema);
-module.exports = Repo;
+var Forum = mongoose.model("Forum", ForumSchema);
+module.exports = Forum;

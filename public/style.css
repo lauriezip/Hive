@@ -1,10 +1,19 @@
-body{
+body {
     font-family: OCR A Std, monospace;
 }
 
+
 .navbar-default {
-    background-color: #ffffff;
     border: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(orange), to(white));
+    background-image: -webkit-linear-graorange, white);
+    background-image: -moz-linear-graorange, white);
+    background-image: linear-gradient(orange, white);
+}
+
+
+.footer {
+    background-color: #F0595C;
 }
 
 
@@ -14,17 +23,20 @@ body{
     border-color: orange;
 }
 
+
 .panel-primary {
     border-color: orange;
 }
 
+
 .body {
-    font-family: Georgia,"Times New Roman",Times,serif;
-    font-size: 16px;
+    font-family: OCR A Std, monospace;
+    font-size: 14px;
     line-height: 1.42857143;
     color: #333333;
-    background-color: #ffffff;
+    background-color: white;
 }
+
 
 .uk-link, a {
     color:#F0595C;
@@ -32,36 +44,44 @@ body{
     cursor: pointer;
 }
 
+
 /*-----------
 Community / Panels / 
 -------------*/
-.card{
+.card {
     height: 150px;
 }
 
-.resources{
+
+.resources {
     border-color: orange;
 
 }
 
-.panel-default>.title{
+
+.panel-default>.title {
     text-align: center;
     color: #F0595C;
     border-color: orange
 }
 
-.levitate{
+
+.levitate {
     border: 1px solid #ffd966;
-    box-shadow: 5px 5px 25px #ffd966;
+    border-color: orange;
+    border-style: solid;
+    border-width: small;
     
 }
 
-.mapitymap{
+
+.mapitymap {
     height:235px;
    
 }
 
-.comments{
+
+.comments {
     background-color: orange;
     opacity: .9;
     clear: both;
@@ -94,8 +114,7 @@ Community / Panels /
     background-image: -webkit-linear-graorange, white);
     background-image: -moz-linear-graorange, white);
     background-image: linear-gradient(orange, white);
-
-    }
+ }
 
     .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
     margin: 0 0 20px 0;
@@ -120,6 +139,12 @@ Community / Panels /
     color: #F0595C;
     
 }
+
+
+.fa-eye, .fa-trash {
+    font-size: 18px;
+}
+
 
 .list-group-item {
     position: relative;
@@ -146,42 +171,52 @@ Community / Panels /
     color: transparent;
 }
 
-.dropdown-menu {
-    background:white;
-    color: #F0595C;
-    border-color:white;
-    width: 1109px;
-    font-family: OCR A Std, monospace;
-    touch-action: manipulation;
-    cursor: pointer;
+
+.img-circle {
+    width: 150px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #ffd966;
+}
+
+
+.jumbotron {
+    background-color: white;
+    border: 2px solid orange;
+}
+
+li {
+    display: inline-block;
+    padding-right: 10px;
     text-align: center;
 }
-/*
-.dropdown li ul li:hover {
-	color: $base;
-	background-color: #F0595C (white, 5%);
-	@include size;
-	@include position;
-}*/
 
-.dropdown li:hover .dropdown-menu, .dropdown li:active .dropdown-menu {
-	display:block;
-	background-color:white;
-	animation: box 2s ease;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+
+.Jumboshit {
+    list-style: none;
+    float:left;
+    display: inline-block;
+    text-align: center;
 }
 
+.well {
+     display: inline-block;
+     text-align: center;
+     float: left;
+     width: 30%;
+     border-color: orange;
+     border-style: solid;
+     border-width: small;
+     background: white;
 
-.dropdown li:hover span {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid $base;
-	margin-top: 42px;
-	position: absolute;
-	margin-left: -40px;
-    
-	}
+}
+
+footer {
+    background: #F0595C;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+}
 

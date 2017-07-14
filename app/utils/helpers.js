@@ -6,6 +6,10 @@ var APIKey = "9b3adf57854f4a19b7b5782cdd6e427a";
 
 // Helper Functions
 var helpers = {
+    signIn: function(user, pass){
+        console.log("Signin data", user);
+        return true;
+    },
 
     // This will run our query.
     runQuery: function(term) {

@@ -61,24 +61,7 @@ var Query = React.createClass({
                       required
                     />
 
-                   {/*<li onClick={this.handleChange} value="javascript">javascript</li>*/}
-
-
-
-
-
-                {/*   <li onClick="css">css</li>
-                   <li onClick="react">react</li>
-                   <li onClick="react native">react native</li>
-                   <li onClick="ruby">ruby</li>
-                   <li onClick="c++">c++</li>
-                   <li onClick="php">php</li>
-                   <li onClick="java">java</li>
-                   <li onClick="c#">c#</li>
-                   <li onClick="python">python</li>
-                   <li onClick="vue">vue</li>
-                   <li onClick="angular">angular</li>*/}
-                 
+                  
                 </div>
                 </form>
                 </div>

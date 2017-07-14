@@ -8,28 +8,28 @@ var helpers = require("../utils/helpers");
 var Main = React.createClass({
 
   getInitialState: function() {
-    return { savedRepo: "" };
+    return { savedRepos: "" };
   },
 
   // When this component mounts, get all saved articles from our db
   componentDidMount: function() {
-    helpers.getSaved().then(function(Data) {
-      this.setState({ savedRepo: results.data });
-      console.log("saved results",Data.data);
+    helpers.getSaved().then(function(result) {
+      this.setState({ savedRepos: result.data });
+      console.log("saved results",result.data);
     }.bind(this));
   },
 
   // This code handles the deleting saved articles from our database
-  handleClick: function(item) {
+  handleClick: function(repo) {
     console.log("CLICKED");
-    console.log(item);
+    console.log(repo);
 
     // Delete the list!
     helpers.deleteSaved(repo.title, repo.body, repo.url).then(function() {
 
       // Get the revised list!
       helpers.getSaved().then(function(Data) {
-        this.setState({ savedRepo: Data.data });
+        this.setState({ savedRepos: Data.data });
         console.log("saved results", Data.data);
       }.bind(this));
 
@@ -49,8 +49,8 @@ var Main = React.createClass({
   },
 
   // A helper method for mapping through our repos and outputting some HTML
-  renderResults: function() {
-    return this.state.savedResults.map(function(docs, data) {
+  renderRepos: function() {
+    return this.state.savedRepos.map(function(repo, index) {
 
       return (
         <div key={index}>
@@ -63,7 +63,7 @@ var Main = React.createClass({
                 <a href={repo.url} rel="noopener noreferrer" target="_blank">
                   <button className="btn btn-default ">View Repository</button>
                 </a>
-                <button className="btn btn-primary" onClick={() => this.handleClick(article)}>Delete</button>
+                <button className="btn btn-primary" onClick={() => this.handleClick(repo)}>Delete</button>
               </span>
             </h3>
             <p>Date Published: {repo.date}</p>

@@ -5,8 +5,14 @@ export default StyleSheet.create({
     'fontFamily': 'OCR A Std, monospace'
   },
   'navbar-default': {
-    'backgroundColor': '#ffffff',
-    'border': [{ 'unit': 'string', 'value': 'none' }]
+    'border': [{ 'unit': 'string', 'value': 'none' }],
+    'backgroundImage': '-webkit-gradient(linear, left top, left bottom, from(orange), to(white))',
+    'backgroundImage': '-webkit-linear-graorange, white)',
+    'backgroundImage': '-moz-linear-graorange, white)',
+    'backgroundImage': 'linear-gradient(orange, white)'
+  },
+  'footer': {
+    'backgroundColor': '#F0595C'
   },
   'panel-primary>panel-heading': {
     'color': '#ffffff',
@@ -17,11 +23,11 @@ export default StyleSheet.create({
     'borderColor': 'orange'
   },
   'body': {
-    'fontFamily': 'Georgia,"Times New Roman",Times,serif',
-    'fontSize': [{ 'unit': 'px', 'value': 16 }],
+    'fontFamily': 'OCR A Std, monospace',
+    'fontSize': [{ 'unit': 'px', 'value': 14 }],
     'lineHeight': [{ 'unit': 'px', 'value': 1.42857143 }],
     'color': '#333333',
-    'backgroundColor': '#ffffff'
+    'backgroundColor': 'white'
   },
   'uk-link': {
     'color': '#F0595C',
@@ -49,7 +55,9 @@ Community / Panels /
   },
   'levitate': {
     'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#ffd966' }],
-    'boxShadow': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'px', 'value': 5 }, { 'unit': 'px', 'value': 25 }, { 'unit': 'string', 'value': '#ffd966' }]
+    'borderColor': 'orange',
+    'borderStyle': 'solid',
+    'borderWidth': 'small'
   },
   'mapitymap': {
     'height': [{ 'unit': 'px', 'value': 235 }]
@@ -181,6 +189,12 @@ Community / Panels /
     'outline': 'none',
     'color': '#F0595C'
   },
+  'fa-eye': {
+    'fontSize': [{ 'unit': 'px', 'value': 18 }]
+  },
+  'fa-trash': {
+    'fontSize': [{ 'unit': 'px', 'value': 18 }]
+  },
   'list-group-item': {
     'position': 'relative',
     'display': 'block',
@@ -211,44 +225,43 @@ Community / Panels /
     'textShadow': [{ 'unit': 'string', 'value': 'none' }, { 'unit': 'string', 'value': 'none' }, { 'unit': 'string', 'value': 'none' }, { 'unit': 'string', 'value': 'none' }],
     'color': 'transparent'
   },
-  'dropdown-menu': {
-    'background': 'white',
-    'color': '#F0595C',
-    'borderColor': 'white',
-    'width': [{ 'unit': 'px', 'value': 1109 }],
-    'fontFamily': 'OCR A Std, monospace',
-    'touchAction': 'manipulation',
-    'cursor': 'pointer',
+  'img-circle': {
+    'width': [{ 'unit': 'px', 'value': 150 }],
+    'position': 'relative',
+    'display': 'block',
+    'marginLeft': [{ 'unit': 'string', 'value': 'auto' }],
+    'marginRight': [{ 'unit': 'string', 'value': 'auto' }],
+    'border': [{ 'unit': 'px', 'value': 3 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#ffd966' }]
+  },
+  'jumbotron': {
+    'backgroundColor': 'white',
+    'border': [{ 'unit': 'px', 'value': 2 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'orange' }]
+  },
+  'li': {
+    'display': 'inline-block',
+    'paddingRight': [{ 'unit': 'px', 'value': 10 }],
     'textAlign': 'center'
   },
-  // .dropdown li ul li:hover {
-	color: $base;
-	background-color: #F0595C (white, 5%);
-	@include size;
-	@include position;
-}
-  'dropdown li:hover dropdown-menu': {
-    'display': 'block',
-    'backgroundColor': 'white',
-    'animation': 'box 2s ease',
-    'animationIterationCount': '1',
-    'animationFillMode': 'forwards'
+  'Jumboshit': {
+    'listStyle': 'none',
+    'float': 'left',
+    'display': 'inline-block',
+    'textAlign': 'center'
   },
-  'dropdown li:active dropdown-menu': {
-    'display': 'block',
-    'backgroundColor': 'white',
-    'animation': 'box 2s ease',
-    'animationIterationCount': '1',
-    'animationFillMode': 'forwards'
+  'well': {
+    'display': 'inline-block',
+    'textAlign': 'center',
+    'float': 'left',
+    'width': [{ 'unit': '%H', 'value': 0.3 }],
+    'borderColor': 'orange',
+    'borderStyle': 'solid',
+    'borderWidth': 'small',
+    'background': 'white'
   },
-  'dropdown li:hover span': {
-    'width': [{ 'unit': 'px', 'value': 0 }],
-    'height': [{ 'unit': 'px', 'value': 0 }],
-    'borderLeft': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'transparent' }],
-    'borderRight': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'transparent' }],
-    'borderBottom': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '$base' }],
-    'marginTop': [{ 'unit': 'px', 'value': 42 }],
-    'position': 'absolute',
-    'marginLeft': [{ 'unit': 'px', 'value': -40 }]
+  'footer': {
+    'background': '#F0595C',
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'bottom': [{ 'unit': 'px', 'value': 0 }],
+    'clear': 'both'
   }
 });
