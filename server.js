@@ -24,7 +24,7 @@ app.use(express.static("./public"));
 // -------------------------------------------------
 
 // MongoDB Configuration configuration
-mongoose.connect("mongodb://localhost/Hive");
+mongoose.connect("mongodb://laurie:54321@ds135519.mlab.com:35519/heroku_snp60tw6");
 var db = mongoose.connection;
 
 db.on("error", function(err) {
