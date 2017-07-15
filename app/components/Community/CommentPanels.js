@@ -36,7 +36,7 @@ var CommentPanels = React.createClass({
                   <img src="https://robohash.org/lzipperer.png?size=50x50" />
                 </div>
                 <div className="col-md-10">
-                  <h4>Hannah Patellis</h4>
+                  <h4>Laurie Zipperer</h4>
                 </div>
               </div>
               <hr />
@@ -52,7 +52,7 @@ var CommentPanels = React.createClass({
                   <img src="https://robohash.org/cjordan.png?size=50x50" />
                 </div>
                 <div className="col-md-10">
-                  <h4>Hannah Patellis</h4>
+                  <h4>CJ Jordan</h4>
                 </div>
               </div>
               <hr />
