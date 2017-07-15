@@ -59,7 +59,7 @@ var Main = React.createClass({
                 {/* Using <Link> in place of <a> and "to" in place of "href" */}
                 <li><Link to=""><i className="fa fa-code" aria-hidden="true"></i></Link></li>
                 <li><Link to="Profile"><i className="fa fa-user-o" aria-hidden="true"></i></Link></li>
-                <li><Link to=""><i className="fa fa-envelope-o" aria-hidden="true"></i></Link></li>
+                <li><Link to="Forum"><i className="fa fa-envelope-o" aria-hidden="true"></i></Link></li>
                 <li><Link to="Community"><i className="fa fa-users" aria-hidden="true"></i></Link></li>
               </ul>
             </div>
@@ -112,7 +112,7 @@ var Main = React.createClass({
                 {/* Using <Link> in place of <a> and "to" in place of "href" */}
                 <li><Link to=""><i className="fa fa-code" aria-hidden="true"></i></Link></li>
                 <li><Link to="Profile"><i className="fa fa-user-o" aria-hidden="true"></i></Link></li>
-                <li><Link to=""><i className="fa fa-envelope-o" aria-hidden="true"></i></Link></li>
+                <li><Link to="Forum"><i className="fa fa-envelope-o" aria-hidden="true"></i></Link></li>
                 <li><Link to="Community"><i className="fa fa-users" aria-hidden="true"></i></Link></li>
               </ul>
             </div>
