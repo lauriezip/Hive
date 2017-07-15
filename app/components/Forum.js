@@ -40,13 +40,12 @@ var Forum = React.createClass({
 
             // Each article thus reperesents a list group item with a known index
             return (
-                <div key={index}>
-                    <li className="list-group-item">
+                <div className="col-md-12" key={index}>
+                        <div className="well gray-card">
                         <h3>{post.title}</h3>
-                        <div>
-                            {post.body}
+                        <p>{post.body}</p>
                         </div>
-                    </li>
+                 
                 </div>
             );
 
@@ -57,14 +56,17 @@ var Forum = React.createClass({
     render: function () {
         return (
             <div>
-                <button onClick={() => this.handleClick()}>New Topic</button>
-                {this.state.showResults ? <Post addPost={this.addPost} /> : null}
-                <div className="panel-body">
-                    <ul className="list-group">
-                        {this.renderPosts()}
-                    </ul>
+              
+                    <div className="col-md-2 col-md-offset-10 forum" >
+                    <button onClick={() => this.handleClick()}>New Topic</button>
+                    </div>
+                    {this.state.showResults ? <Post addPost={this.addPost} /> : null}
+           
+                <div>
+                            {this.renderPosts()}  
                 </div>
             </div>
+
         );
     }
 });
