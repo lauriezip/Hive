@@ -2,6 +2,9 @@
 var React = require("react");
 var Link = require("react-router").Link;
 
+const mapStyles = {
+  padding: '0px'
+};
 
 var Maps = React.createClass({
 
@@ -9,8 +12,8 @@ var Maps = React.createClass({
     return (
       <div>
         <div className="col-md-6">
-          <div className="well gray-card map">
-            <h3>Map Goes here</h3>
+          <div className="well gray-card map" style={mapStyles}>
+            <img src="map.png" />
           </div>
         </div>
       </div>

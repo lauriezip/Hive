@@ -1,0 +1,7 @@
+git add .
+git commit -m "{MESSAGE}"
+git push
+
+-- Wait about a minute for Herkou to automatically pull new files from GitHub --
+
+Then visit https://hive-tcb.herokuapp.com/

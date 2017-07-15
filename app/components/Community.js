@@ -5,12 +5,14 @@ var Dashboard = require("./Community/Dashboard");
 var Feed = require("./Community/Feed");
 var Maps = require("./Community/Maps");
 var Comments = require("./Community/Comments");
+var ResourceModal = require("./Community/ResourceModal");
 // Create the Main component
 var Community = React.createClass({
 
   render: function() {
     return (
       <div>
+        <ResourceModal />
         <Dashboard />
         <Maps/>
         <Feed />

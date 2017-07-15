@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   'body': {
-    'fontFamily': 'OCR A Std, monospace'
+    'fontFamily': 'Helvetica, Arial, sans-serif'
   },
   'navbar-default': {
     'backgroundColor': '#ffffff',
@@ -10,11 +10,11 @@ export default StyleSheet.create({
   },
   'panel-primary>panel-heading': {
     'color': '#ffffff',
-    'backgroundColor': 'orange',
-    'borderColor': 'orange'
+    'backgroundColor': '#f29e33',
+    'borderColor': '#f29e33'
   },
   'panel-primary': {
-    'borderColor': 'orange'
+    'borderColor': '#f29e33'
   },
   'body': {
     'fontFamily': 'Georgia,"Times New Roman",Times,serif',
@@ -24,12 +24,12 @@ export default StyleSheet.create({
     'backgroundColor': '#ffffff'
   },
   'uk-link': {
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textDecoration': 'none',
     'cursor': 'pointer'
   },
   'a': {
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textDecoration': 'none',
     'cursor': 'pointer'
   },
@@ -40,12 +40,12 @@ Community / Panels /
     'height': [{ 'unit': 'px', 'value': 150 }]
   },
   'resources': {
-    'borderColor': 'orange'
+    'borderColor': '#f29e33'
   },
   'panel-default>title': {
     'textAlign': 'center',
-    'color': '#F0595C',
-    'borderColor': 'orange'
+    'color': '#f29e33',
+    'borderColor': '#f29e33'
   },
   'levitate': {
     'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#ffd966' }],
@@ -55,7 +55,7 @@ Community / Panels /
     'height': [{ 'unit': 'px', 'value': 235 }]
   },
   'comments': {
-    'backgroundColor': 'orange',
+    'backgroundColor': '#f29e33',
     'opacity': '.9',
     'clear': 'both',
     'overflow': 'auto',
@@ -68,106 +68,99 @@ Community / Panels /
     'padding': [{ 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 12 }, { 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 12 }],
     'fontSize': [{ 'unit': 'px', 'value': 16 }],
     'lineHeight': [{ 'unit': 'px', 'value': 1.42857143 }],
-    'color': '#F0595C',
+    'color': '#f29e33',
     'backgroundColor': '#ffffff',
     'backgroundImage': 'none',
-    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid:' }, { 'unit': 'string', 'value': '#ffd966' }],
+    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#f29e33' }],
     'borderRadius': '4px',
-    'WebkitBoxShadow': 'inset 0 1px 1px orange',
-    'boxShadow': [{ 'unit': 'string', 'value': 'inset' }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'orange' }],
-    'WebkitTransition': 'border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s',
-    'OTransition': 'border-color ease-in-out .15s,box-shadow ease-in-out .15s',
-    'transition': 'border-color ease-in-out .15s,box-shadow ease-in-out .15s'
+    'WebkitBoxShadow': 'inset 0 1px 1px #f29e33',
+    'boxShadow': [{ 'unit': 'string', 'value': 'inset' }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': '#f29e33' }]
   },
   'panel-heading': {
-    'backgroundImage': '-webkit-gradient(linear, left top, left bottom, from(orange), to(white))',
-    'backgroundImage': '-webkit-linear-graorange, white)',
-    'backgroundImage': '-moz-linear-graorange, white)',
-    'backgroundImage': 'linear-gradient(orange, white)'
+    'background': '#f29e33'
   },
   'uk-h1': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'uk-h2': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'uk-h3': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'uk-h4': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'uk-h5': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'uk-h6': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
-    'textTransform': 'none'
-  },
-  'h1': {
-    'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
-    'fontFamily': 'OCR A Std, monospace',
-    'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'h2': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'h3': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'h4': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'h5': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
   },
   'h6': {
     'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }],
     'fontFamily': 'OCR A Std, monospace',
     'fontWeight': '400',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'textTransform': 'none'
+  },
+  'h1': {
+    'fontSize': [{ 'unit': 'em', 'value': 1.7 }]
+  },
+  'userName': {
+    'marginTop': [{ 'unit': 'px', 'value': 5 }]
   },
   'fa': {
     'display': 'inline-block',
@@ -179,7 +172,7 @@ Community / Panels /
     'background': 'none',
     'border': [{ 'unit': 'string', 'value': 'none' }],
     'outline': 'none',
-    'color': '#F0595C'
+    'color': '#f29e33'
   },
   'list-group-item': {
     'position': 'relative',
@@ -213,13 +206,51 @@ Community / Panels /
   },
   'dropdown-menu': {
     'background': 'white',
-    'color': '#F0595C',
+    'color': '#f29e33',
     'borderColor': 'white',
     'width': [{ 'unit': 'px', 'value': 1109 }],
     'fontFamily': 'OCR A Std, monospace',
     'touchAction': 'manipulation',
     'cursor': 'pointer',
     'textAlign': 'center'
+  },
+  'home-container': {
+    'background': 'url('hivebg.png') no-repeat',
+    'height': [{ 'unit': 'vh', 'value': 100 }],
+    'backgroundSize': 'cover',
+    'backgroundPosition': '0 100%',
+    'position': 'relative'
+  },
+  'logo': {
+    'position': 'absolute',
+    'top': [{ 'unit': 'px', 'value': -330 }],
+    'left': [{ 'unit': 'px', 'value': -200 }]
+  },
+  'avatar': {
+    'width': [{ 'unit': 'px', 'value': 200 }],
+    'position': 'relative',
+    'display': 'block',
+    'marginLeft': [{ 'unit': 'string', 'value': 'auto' }],
+    'marginRight': [{ 'unit': 'string', 'value': 'auto' }],
+    'border': [{ 'unit': 'px', 'value': 3 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#f29e33' }]
+  },
+  'well>h4': {
+    'textAlign': 'center'
+  },
+  'profile': {
+    'textAlign': 'center'
+  },
+  'li': {
+    'listStyle': 'none',
+    'display': 'inline-block',
+    'paddingRight': [{ 'unit': 'px', 'value': 20 }]
+  },
+  'orange': {
+    'fontSize': [{ 'unit': 'px', 'value': 25 }]
+  },
+  'well': {
+    'boxShadow': [{ 'unit': 'px', 'value': 2 }, { 'unit': 'px', 'value': 2 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'rgba(0,0,0,0.05)' }],
+    'background': 'white'
   },
   // .dropdown li ul li:hover {
 	color: $base;
@@ -241,14 +272,10 @@ Community / Panels /
     'animationIterationCount': '1',
     'animationFillMode': 'forwards'
   },
-  'dropdown li:hover span': {
-    'width': [{ 'unit': 'px', 'value': 0 }],
-    'height': [{ 'unit': 'px', 'value': 0 }],
-    'borderLeft': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'transparent' }],
-    'borderRight': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'transparent' }],
-    'borderBottom': [{ 'unit': 'px', 'value': 10 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '$base' }],
-    'marginTop': [{ 'unit': 'px', 'value': 42 }],
-    'position': 'absolute',
-    'marginLeft': [{ 'unit': 'px', 'value': -40 }]
+  'jumbo': {
+    'padding': [{ 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 10 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 10 }]
+  },
+  'about': {
+    'height': [{ 'unit': 'px', 'value': 230 }]
   }
 });

@@ -8,19 +8,11 @@ var Dashboard = React.createClass({
   render: function() {
     return (
       <div>
-        <Panel title = "Hive"/>
-        <Panel title = "GitHub"/>
-        <Panel title = "Open Source"/>
-        <Panel title = "Links"/>
+        <Panel />
       </div>
     );
   }
 });
 
-
-
-
-
-  
   // Export the module back to the route
   module.exports = Dashboard;
