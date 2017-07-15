@@ -22,7 +22,9 @@ var Feed = React.createClass({
       if ({index}.index > this.state.Posts.length - 7) {
         return (
           <tr key={index}>
-            <td>{post.title}</td>
+            
+            <td><Link to="Forum">{post.title}</Link></td>
+            
           </tr>
         );
       }
