@@ -26,13 +26,19 @@ var Post = React.createClass({
 
     render: function () {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <input type="text" placeholder="title" name="title" value={this.state.title} onChange={this.handleInputChange} />
-                <br />
-                <textarea name="body" placeholder="question/discussion (Include code when relevant)" value={this.state.body} onChange={this.handleInputChange} />
-                <br />
-                <input type="submit" value="Submit" />
-            </form>
+            <div className="modality">
+                <div className="col-md-6 col-md-offset-3">
+                    <div className="well gray-card">
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="text" className="form-control"  placeholder="title" name="title" value={this.state.title} onChange={this.handleInputChange} />
+                            <br />
+                            <textarea name="body"  className="form-control" placeholder="question/discussion (Include code when relevant)" value={this.state.body} onChange={this.handleInputChange} />
+                            <br />
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
         );
     }
 });

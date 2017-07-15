@@ -230,3 +230,15 @@ section{
 .table-card>table{
     margin-bottom: 10px;
 }
+
+/*-----------------------------------------
+       Forum
+------------------------------------------*/
+.forum{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.forum>button{
+    float: right;
+}
