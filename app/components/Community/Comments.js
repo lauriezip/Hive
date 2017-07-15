@@ -8,11 +8,7 @@ var Comments = React.createClass({
   render: function() {
     return (
       <div className="comments">
-        <CommentPanels title = "Hive"/>
-        <CommentPanels title = "Hive"/>
-        <CommentPanels title = "Hive"/>
-        <CommentPanels title = "Hive"/>
-    
+        <CommentPanels />
       </div>
     );
   }
