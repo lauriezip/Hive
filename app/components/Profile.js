@@ -20,7 +20,7 @@ var Profile = React.createClass({
               />
 
 
-              <h1 className="userName">USER NAME</h1>
+              <h1 className="userName">Mike Smith</h1>
               <h3>Creator of Code @ The Interweb</h3>
               {/* Using <a> in place of <a> and "to" in place of "href" */}
               <ul className="profile">
